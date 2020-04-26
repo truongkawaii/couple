@@ -1,0 +1,76 @@
+.blog {
+    .container {
+        padding-bottom: 6rem;
+        background-color: #FAF9F5;
+    }
+    &__title {
+        text-align: center;
+        h1 {
+            font-size: 4.8rem;
+            color: #222222;
+        }
+        &--heart {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            i {
+                padding: 1rem;
+                color: $pink;
+                font-size: 2rem;
+            }
+        }
+    }
+    &__line {
+        width: 4rem;
+        height: 1.5px;
+        background-color: $pink;
+    }
+    &__card {
+        .blog__component {
+            border-radius: 1.2rem 1.2rem 0 0;
+            background-color: white;
+            img {
+                border-radius: 1.2rem 1.2rem 0 0;
+            }
+            &--text {
+                padding: 0 3rem;
+                text-align: center;
+                h3 {
+                    padding: 2rem 0 0 1.1rem;
+                    color: #222222;
+                    font-size: 1.6rem;
+                }
+                h4 {
+                    padding: 1rem 0 2rem 0;
+                    color: #d6516d;
+                    font-size: 15px;
+                }
+                p {
+                    padding-bottom: 1.5rem;
+                    color: #999999;
+                    font-size: 14px;
+                }
+                &-btn {
+                    padding-bottom: 3rem;
+                    padding-top: 2rem;
+                }
+                a {
+                    border-radius: 0.7rem;
+                    text-decoration: none;
+                    padding: 1.2rem 3rem;
+                    color: #ffffff;
+                    background-color: #d6516d;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(767) {
+    .blog {
+        &__card {
+            margin-top: 3rem;
+        }
+    }
+}

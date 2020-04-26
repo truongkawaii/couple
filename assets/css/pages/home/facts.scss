@@ -1,0 +1,94 @@
+.facts {
+    background: url("../images/funfacts.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem 0;
+
+    @include breakpoint(767) {
+        padding: 4rem 0;
+    }
+
+    .top_title__facts {
+        text-align: center;
+        margin-bottom: 8rem;
+
+        @include breakpoint(767) {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 5rem;
+            color: black;
+        }
+        .line_facts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .un_line__facts {
+                background-color: $pink;
+                height: 2px;
+                width: 6rem;
+            }
+            i {
+                font-size: 2.5rem;
+                color: $pink;
+                padding: 0 1rem;
+            }
+        }
+    }
+    &__content {
+        max-width: 100%;
+        background-color: $pink;
+        border-radius: 50%;
+        display: flex;
+
+        @include breakpoint(767) {
+            max-width: 50%;
+            margin: 0 auto 2rem auto;
+        }
+
+        @include breakpoint(550) {
+            max-width: 70%;
+            //margin: 0 auto 2rem auto;
+        }
+
+        .img-circle {
+            margin: auto;
+            text-align: center;
+            font-weight: 900;
+            font-family: $open-sans;
+            padding: 2rem;
+
+            .timer {
+                color: #fff;
+                font-size: 8rem;
+                letter-spacing: normal;
+                margin: 0;
+                @include breakpoint(991) {
+                    font-size: 5rem;
+                }
+
+                @include breakpoint(767) {
+                    font-size: 4rem;
+                }
+
+                @include breakpoint(425) {
+                    font-size: 2.5rem;
+                }
+            }
+            h6 {
+                color: #000;
+                margin: 0;
+                font-size: 1.4rem;
+
+                @include breakpoint(767) {
+                    font-size: 1.2rem;
+                }
+
+                @include breakpoint(425) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

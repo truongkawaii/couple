@@ -1,0 +1,85 @@
+.banner {
+    position: relative;
+    .banner__bg{
+        background-image: url(../images/banner3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100vh;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        @include breakpointminmax(0, 575) { margin: 0 -15px;}
+        .banner__text {
+            color: white;
+            text-align: center;
+            .banner__title{
+                font-size: 9.9rem;
+                font-weight: 400;
+                line-height: 10.9rem;
+            }
+            .banner__des {
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 3.1rem;
+                text-transform: uppercase;
+                letter-spacing: 1rem;
+            }
+            .banner__cus {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .cus__line {
+                    height: 2px;
+                    width: 30%;
+                    background-color: white; 
+                    &:first-child {
+                        margin-right: 1rem;
+                    }
+                    &:last-child {
+                        margin-left: 1rem;
+                    }
+                }
+                i {
+                    font-size: 3rem;
+                }
+            }
+            .banner__time {
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 3.1rem;
+                text-transform: uppercase;
+                letter-spacing: 1rem;
+            }
+        }
+    }
+    .banner__count{
+        position: absolute;
+        display: flex;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @include breakpointminmax(0, 575) { margin: 0 -15px;}
+        @include breakpointminmax(0, 767) { 
+            padding: 2rem 0;
+            position: static;
+            transform: translateX(0);
+            justify-content: center;
+            background: linear-gradient(135deg,  rgba(214,81,110,0.2) 0%,rgba(214,81,110,0.2) 1%,rgba(82,178,189,0.2) 100%);
+        }
+        .count__item {
+            text-align: center;
+            font-size: 2rem;
+            background-color: white;
+            padding: 3rem 1rem;
+            margin: 0 0.3rem;
+            
+            div{
+            }
+            span {
+                color: #D6516D;
+            }
+        }
+    }
+        
+}

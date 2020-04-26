@@ -1,0 +1,119 @@
+$color_story: #d6516d;
+@mixin radius {
+    border-radius: 50%;
+}
+
+//------------------- OUR LOVE STORY --------------
+.story {
+    padding: 5rem 0;
+    background-color: whitesmoke;
+    .top_title__story {
+        text-align: center;
+        padding: 3rem 0;
+        h1 {
+            font-size: 7rem;
+            color: black;
+            @include breakpoint(336) {
+                font-size: 5rem;
+            }
+        }
+        .line_story {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .un_line__story {
+                background-color: $color_story;
+                height: 2px;
+                width: 6rem;
+            }
+            i {
+                font-size: 2.5rem;
+                color: $color_story;
+                padding: 0 1rem;
+            }
+        }
+    }
+    .content_story {
+        .block_story {
+            text-align: center;
+            @include breakpoint(991) {
+                padding: 4rem 0;
+            }
+            .photo_story {
+                position: relative;
+                cursor: pointer;
+                @include breakpointminmax(404, 767) {
+                    max-width: 69%;
+                    margin: auto;
+                }
+                .img_story {
+                    @include radius();
+                    max-width: 100%;
+                }
+                .overlay_story {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    @include radius();
+                    top: 0;
+                    right: 0;
+                    background-color: $color_story;
+                    opacity: 0;
+                    transition: 0.2s;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+                .img_link {
+                    i {
+                        font-size: 4rem;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: 55;
+                        transform: translate(-50%, -160%);
+                        transition: 0.2s;
+                        opacity: 0;
+                    }
+                }
+                &.photo_story:hover i {
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
+            }
+            h4 {
+                font-size: 2.5rem;
+                color: $color_story;
+                padding: 2rem 0;
+            }
+            p {
+                font-size: 2rem;
+                color: gray;
+                @include breakpoint(991) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+.btn_link__story {
+    text-align: center;
+    padding: 4rem 0;
+    .link_story {
+        font-size: 2rem;
+        display: inline-block;
+        text-decoration: none;
+        background-color: $color_story;
+        padding: 2.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 0.2rem;
+        border-radius: 1rem;
+        @include breakpoint(400) {
+            font-size: 1.5rem;
+        }
+    }
+}

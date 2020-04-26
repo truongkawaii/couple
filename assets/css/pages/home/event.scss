@@ -1,0 +1,79 @@
+.events {
+    padding: 8rem 0;
+    .events__title {
+        text-align: center;
+        padding-bottom: 8rem;
+        h1 {
+            font-size: 6rem;
+            color: black;
+        }
+        .events__line{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .left__line,.right__line {
+                width: 5%;
+                background-color: #d6516d;
+                height: 0.2rem;
+            }
+            i {
+                font-size: 2rem;
+                padding: 0 1rem;
+                color: #d6516d;
+            }
+        }
+    }
+    .events__block {
+        border-radius: 1rem;
+        background-color: white;
+        margin-bottom: 3rem;
+        
+        .events__img {
+            
+            img{
+                display: block;
+                width: 100%; 
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+        }
+        .events__content{
+            text-align: center;
+            padding: 2rem;
+            .events__bride {
+                font-size: 2.5rem;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+                padding-top: 4rem;
+            }
+            .events__date {
+                font-size: 2rem;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                color: #d6516d;
+                padding-top: 1rem;
+                padding-bottom: 4rem;
+            }
+            .events__detail {
+                font-size: 1.8rem;
+                color: #999999;
+                padding-bottom: 3rem;
+            }
+        }
+        .events__button {
+            text-align: center;
+            padding-bottom: 4rem;
+            .events__btn {
+                padding: 1rem 2.5rem;
+                background-color: #d6516d;
+                display: inline-block;
+                text-decoration: none;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                color: white;
+                text-transform: uppercase;
+                font-size: 2rem;
+                letter-spacing: 0.4rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
